@@ -235,6 +235,50 @@ button{
     border: solid 2px;
     margin-left: 20px;
 }
+
+/*destination page*/
+
+section {
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+section h1 {
+    color: #1F2937;
+    font-size: 48px;
+    text-align: center;
+}
+
+section p {
+    margin: 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #1F2937;
+    margin: 10px 0;
+    padding: 5px;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.tip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.tips button {
+    width: 160px;
+}
+
 /*media queries for larger screens*/
 
 @media screen and (min-width: 768px) {
