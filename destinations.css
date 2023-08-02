@@ -1,0 +1,40 @@
+.tips {
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.tips h1 {
+    color: #1F2937;
+    font-size: 48px;
+    text-align: center;
+}
+
+.tips p {
+    margin: 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.tips h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #1F2937;
+    margin: 10px 0;
+    padding: 5px;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.tip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.tips button {
+    width: 160px;
+}
