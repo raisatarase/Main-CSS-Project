@@ -200,7 +200,7 @@ footer .wrapper {
     max-width: 1400px;
     margin: auto;
     display: block;
-    /* flex-direction: column; 
+    /* flex-direction: column;
     flex-wrap: wrap;  */
 }
 
@@ -254,6 +254,10 @@ footer .footer-col ul li a:hover {
 
 .footer-col ul li {
     margin-bottom: 10px;
+}
+
+address p{
+    color: #F9FAF8;
 }
 
 .footer-col .social-links a {
