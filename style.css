@@ -127,6 +127,8 @@ main {
 p{
     padding-top: 20px;
     padding-bottom: 20px;
+    font-size: 18px;
+    color:#1f2937;
 }
 
 .divOffers,
@@ -234,6 +236,11 @@ button{
     border-color: white;
     border: solid 2px;
     margin-left: 20px;
+}
+
+h1{
+    font-size: 36px;
+    color: #1f2937;
 }
 /*media queries for larger screens*/
 
