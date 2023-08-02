@@ -151,6 +151,11 @@ body {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 1s ease-out;
+  box-sizing: border-box;
+  width: auto;
+  height: auto;
+  text-align: center;
+  display: inline-block;
 }
 
 .deal-alert button:hover {
