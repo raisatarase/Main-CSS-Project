@@ -17,7 +17,7 @@ body {
 
 .deal-container {
   display: flex;
-  max-width: 80%;
+  max-width: 100%;
   margin: 0 auto;
   margin-bottom: 48px;
 }
@@ -73,7 +73,7 @@ body {
   background-color: #e5e7eb;
   margin-bottom: 48px;
   padding: 30px;
-  max-width: 80%;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -151,6 +151,11 @@ body {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 1s ease-out;
+  box-sizing: border-box;
+  width: auto;
+  height: auto;
+  text-align: center;
+  display: inline-block;
 }
 
 .deal-alert button:hover {
