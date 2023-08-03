@@ -1,13 +1,12 @@
 body {
-  max-width: 1400px;
+  width: 100%;
   margin: 0 auto;
-  padding: 20px; */
   box-sizing: border-box;
 }
 
 .deal-title {
   text-align: center;
-  margin: 48px 0px;
+  margin-bottom: 24px;
 }
 
 .deal-title h1 {
@@ -19,7 +18,7 @@ body {
   display: flex;
   max-width: 100%;
   margin: 0 auto;
-  margin-bottom: 48px;
+  margin-bottom: 24px;
 }
 
 .deal-item {
@@ -71,7 +70,7 @@ body {
 .deal-alert {
   text-align: center;
   background-color: #e5e7eb;
-  margin-bottom: 48px;
+  margin-bottom: 24px;
   padding: 30px;
   max-width: 100%;
   margin-left: auto;
@@ -161,4 +160,61 @@ body {
 
 .deal-alert button:hover {
   background-color: #0069d9;
+}
+
+/* Mobile styles for screens up to 600px */
+@media (max-width: 600px) {
+  .deal-container {
+    flex-direction: column;
+  }
+
+  .deal-item {
+    margin: 10px 0;
+    flex: 0 0 100%;
+  }
+
+  .deal-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  .deal-description,
+  .deal-faq,
+  .deal-alert {
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .deal-description h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  .deal-description p {
+    font-size: 16px;
+  }
+}
+
+/* Tablet styles for min-width 601px and max-width:1024px */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .deal-container {
+    flex-wrap: wrap;
+  }
+
+  .deal-item {
+    flex: 0 0 100%;
+    margin: 10px 0;
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 1025px) {
+  .deal-container {
+    justify-content: space-between;
+  }
+
+  .deal-item {
+    flex: 0 0 calc(33.33% - 20px);
+  }
 }
