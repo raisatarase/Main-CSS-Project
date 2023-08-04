@@ -5,40 +5,29 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../style.css">
-	<link rel="stylesheet" href="../destinations.css">
+	<link rel="stylesheet" href="../css/destinations.css">
 	<title>TripBlissDestinations</title>
 </head>
 
 <body>
-	<header>
-		<div class="hero">
-			<div class="logo">TripBliss</div>
-			<nav>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="./about.html">About</a></li>
-					<li><a href="./services.html">Services</a></li>
-					<li><a href="./destinations.html">Destinations</a></li>
-					<li><a href="./contact.html">Contact Us</a></li>
-				</ul>
-			</nav>
-		</div>
-
-		<div class="hero-image">
-			<section>
-				<h1>Make a Booking Today</h1>
-				<p>
-					Welcome to TripBliss. Visit our page to see all of our geat deals.
-					We offer different packages at affordable prices. Discount prices on
-					first 10 bookings.
-				</p>
-				<button type="submit">Book now</button>
-			</section>
-			<figure>
-				<img src="../images/holiday.jpg" height="auto" alt="man on holiday" />
-			</figure>
-		</div>
-	</header>
+    <header>
+		<section class="header-title">
+		  <h1>TripBliss</h1>
+		  <button class="menu-button">
+			<div class="menu-icon"></div>
+		  </button>
+		</section>
+  
+		<nav>
+		  <ul>
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="./about.html">About</a></li>
+			<li><a href="./services.html">Services</a></li>
+			<li><a href="./destinations.html">Destinations</a></li>
+			<li><a href="./contact.html">Contact</a></li>
+		  </ul>
+		</nav>
+	  </header>
 	<section class="tips">
 		<div class="someText">
 			<h1>Top travel destinations &amp; trips</h1>
@@ -61,7 +50,7 @@
 		<h2>Our top 5 destinations</h2>
 		<div class="wrapper">
 			<article class="tip">
-				<img src="./dest-pictures/machu-picchu.jpeg" width="400px" alt="">
+				<img src="../images/dest-pictures/machu-picchu.jpeg" width="400px" alt="">
 				<h2>Machu Piccu</h2>
 				<p>
 					Machu Picchu was built in the 15th century by the Inca emperor Pachacuti and served as a royal
@@ -79,7 +68,7 @@
 				<button>Book Your Spot Today &raquo;</button>
 			</article>
 			<article class="tip">
-				<img src="./dest-pictures/pyramids-of-giza.jpeg" width="400px" alt="">
+				<img src="../images/dest-pictures/pyramids-of-giza.jpeg" width="400px" alt="">
 				<h2>Piramids of Giza</h2>
 				<p>
 					The Pyramids of Giza are one of the most iconic and awe-inspiring ancient monuments in the world.The
@@ -96,7 +85,7 @@
 		</div>
 		<div class="wrapper">
 			<article class="tip">
-				<img src="./dest-pictures/antelope-canyon.jpg" width="400px" alt="">
+				<img src="../images/dest-pictures/antelope-canyon.jpg" width="400px" alt="">
 				<h2>Antelope Canyon</h2>
 				<p>
 					Antelope Canyon is a breathtaking slot canyon located in the American Southwest, near Page,
@@ -113,7 +102,7 @@
 				<button>Book Your Spot Today &raquo;</button>
 			</article>
 			<article class="tip">
-				<img src="./dest-pictures/the-na-pali-coast.jpg" width="400px" alt="">
+				<img src="../images/dest-pictures/the-na-pali-coast.jpg" width="400px" alt="">
 				<h2>The Na Pali Coast</h2>
 				<p>
 					The Na Pali Coast is a amazing coastline located on the northwest side of the Hawaiian island of
@@ -130,7 +119,7 @@
 			</article>
 		</div>
 			<article class="tip">
-				<img src="./dest-pictures/bora -bora.jpeg" width="400px" alt="">
+				<img src="../images/dest-pictures/bora -bora.jpeg" width="400px" alt="">
 				<h2>Bora Bora Island</h2>
 				<p>
 					Bora Bora is a stunning island located in French Polynesia, often described as a paradise on
@@ -149,22 +138,50 @@
 		
 	</section>
 	<footer>
-		<nav>
-			<ul>
-				<li><a href="./index.html">Home</a></li>
-				<li><a href="./pages/about.html">About</a></li>
-				<li><a href="./pages/services.html">Services</a></li>
-				<li><a href="./pages/destinations.html">Destinations</a></li>
-				<li><a href="./pages/contact.html">Contact Us</a></li>
-			</ul>
-		</nav>
-		<div class="social">
-			<a href="#"><span class="fa fa-facebook-f"></span> </a>
-			<a href="#"><span class="fa fa-twitter"></span> </a>
-			<a href="#"><span class="fa fa-instagram"></span> </a>
-			<a href="#"><span class="fa fa-pinterest"></span> </a>
-		</div>
-		<div class="copyright">&copy; 2023 TripBliss</div>
-	</footer>
+		<section class="wrapper">
+		  <div class="row">
+			<section class="footer-col">
+			  <h4>Our Company</h4>
+			  <ul>
+				<li><a href="../about.html">About Us</a></li>
+				<li><a href="./services.html">Services</a></li>
+				<li><a href="./destinations.html">Destinations</a></li>
+				<li><a href="./contact.html">Contact Us</a></li>
+			  </ul>
+			</section>
+	
+			<section class="footer-col">
+			  <h4>Our Deals</h4>
+			  <ul>
+				<li><a href="#FAQ">FAQ</a></li>
+				<li><a href="#">Privacy Policy</a></li>
+			  </ul>
+			</section>
+	
+			<section class="footer-col">
+			  <h4>Our Location</h4>
+			  <address>
+				<p>
+				  307 HomeStrasse <br />
+				  Berlin <br />
+				  Germany
+				</p>
+			  </address>
+			</section>
+	
+			<section class="footer-col">
+			  <div class="socials">
+				<h4>Follow Us</h4>
+				<a href="#"><span class="fa fa-facebook-f"></span></a>
+				<a href="#"><span class="fa fa-twitter"></span></a>
+				<a href="#"><span class="fa fa-instagram"></span></a>
+				<a href="#"><span class="fa fa-pinterest"></a>
+			  </div>
+			</section>
+		  </div>
+		</section>
+	
+		<div class="copyright"> <em>&copy; 2023 TripBliss</em></div>
+	  </footer>
 </body>
 </html>
