@@ -6,11 +6,10 @@ body {
 
 .deal-title {
   text-align: center;
-  margin: 48px 0px;
+  margin-bottom: 40px;
 }
 
 .deal-title h1 {
-  font-size: 36px;
   color: #1f2937;
 }
 
