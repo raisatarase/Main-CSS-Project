@@ -117,7 +117,7 @@ header a:hover {
     margin-left: -160px;
     margin-right: -160px;
     padding: 30px 100px;
-} 
+}
 
 .hero img {
     width: 50%;
@@ -177,8 +177,7 @@ main {
     padding: 5px;
 }
 main {
-    padding-left: 10rem;
-    padding-right: 10rem ;
+
     padding-top: 100px;
     padding-bottom: 100px;
     color:#1f2937;
@@ -202,18 +201,31 @@ p{
 .divOffers,
 .divExplore {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    /* padding-left: 40px;
+    padding-right: 40px; */
+    padding-left: 10rem;
+    padding-right: 10rem ;
 }
 
 .figureCards{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
+    position: relative;
+    margin: 10px;
+    flex-basis: calc(33.33% - 20px);
+    max-width: calc(33.33% - 20px);
+    box-sizing: border-box;
 }
 .imgCards{
-    width: 300px;
-    height: 200px;   
-    border-radius: 10px;
+    width: 100%;
+    max-width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 button{
@@ -249,7 +261,6 @@ button{
     background-color: #e5e7eb;
     margin-bottom: 40px;
     margin-top: 40px;
-    padding: 30px;
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -265,6 +276,7 @@ button{
     line-height: 1.6;
     color: #374151;
     font-style: italic;
+    padding: 20px;
 
 }
 
@@ -282,7 +294,7 @@ button{
     justify-content: center;
     margin-top: 40px;
     align-items: center;
-    flex-direction: row; 
+    flex-direction: row;
 }
 
 .helpDiv{
@@ -290,7 +302,7 @@ button{
     justify-content: center;
     margin-top: 40px;
     align-items: center;
-    flex-direction: row; 
+    flex-direction: row;
     background-color: #3882f6;
     color: white;
     height: 6rem;
@@ -369,16 +381,42 @@ footer .wrapper {
 .copyright {
     font-size: 12px;
 }
-@media screen and (min-width: 768px) {
+
+@media screen and (max-width: 1400px) {
+  .divExplore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .figureCards {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    max-width: 400px;
+    margin: 10px auto;
+  }
+
+  .imgCards {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+
+
+/* @media screen and (min-width: 768px) {
     header {
-        padding: 20px 100px; 
+        padding: 20px 100px;
         display: flex;
         justify-content: space-between;
     }
     header .menu-button {
         display: none;
     }
-    
+
     header nav {
         display: flex;
     }
@@ -388,12 +426,12 @@ footer .wrapper {
     }
     header nav ul {
         display: flex;
-        justify-content: space-between; 
+        justify-content: space-between;
     }
     header nav a:hover, header nav a:focus {
         transform: scale(0.95);
     }
-  
+
     .hero {
         display: flex;
         flex-direction: row;
@@ -412,5 +450,5 @@ footer .wrapper {
 
     main {
         min-height: max-content;
-    }
+    } */
 }
