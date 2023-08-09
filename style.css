@@ -2,21 +2,51 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Roboto", sans-serif;
 }
-html {
+
+/* I think this one should be taken out
+as we are mentioning already in * that
+the font family is going to be "Roboto" for everything */
+
+/* html {
     font-family: "Roboto";
-}
+} */
+
+
 body {
-    min-height: 100vw;
+  /* Styles from the original code from github */
+    /* min-height: 100vw;
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column nowrap; */
+
+  /* New styling */
+    /* min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0; */
+  /* Last styling */
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
 }
 
 header {
-    background-color: #1F2937;
+  /* Old code */
+    /* background-color: #1F2937;
     padding: 5px 100px;
+    position: sticky; */
+
+  /* New code */
+    background-color: #1F2937;
+    padding: 10px;
     position: sticky;
+    top: 0;
+    z-index: 2;
 }
 .header-title {
     padding: 0.25rem 0;
@@ -108,14 +138,11 @@ header a:hover {
 }
 
 .hero {
-    /* width: 1400px; */
     background-color: #1F2937;
     display: flex;
     flex-direction: column;
     color: #E5E7E7;
     margin-top: -100px;
-    margin-left: -160px;
-    margin-right: -160px;
     padding: 30px 100px;
 }
 
@@ -382,7 +409,7 @@ footer .wrapper {
     font-size: 12px;
 }
 
-@media screen and (max-width: 1400px) {
+/* @media screen and (max-width: 1400px) {
   .divExplore {
     display: flex;
     flex-direction: column;
@@ -402,12 +429,11 @@ footer .wrapper {
     width: 100%;
     height: auto;
   }
-}
+} */
 
 
 
-
-/* @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     header {
         padding: 20px 100px;
         display: flex;
@@ -451,4 +477,4 @@ footer .wrapper {
     main {
         min-height: max-content;
     } */
-}
+  }
