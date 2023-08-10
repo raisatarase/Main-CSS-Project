@@ -1,32 +1,10 @@
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    /* margin: 0; */
+    /* padding: 0; */
 }
 
-/* I think this one should be taken out
-as we are mentioning already in * that
-the font family is going to be "Roboto" for everything */
-
-/* html {
-    font-family: "Roboto";
-} */
-
-
 body {
-  /* Styles from the original code from github */
-    /* min-height: 100vw;
-    display: flex;
-    flex-flow: column nowrap; */
-
-  /* New styling */
-    /* min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0; */
-  /* Last styling */
   font-family: "Roboto", sans-serif;
   line-height: 1.6;
   background-color: #f9f9f9;
@@ -36,12 +14,6 @@ body {
 }
 
 header {
-  /* Old code */
-    /* background-color: #1F2937;
-    padding: 5px 100px;
-    position: sticky; */
-
-  /* New code */
     background-color: #1F2937;
     padding: 10px;
     position: sticky;
@@ -57,7 +29,6 @@ header {
 .header-title h1 {
     color: #F9FAF8;
     font-size: 24px;
-    /* max-width: 200px; */
 }
 .menu-button {
     background-color: transparent;
@@ -109,8 +80,6 @@ header nav {
 
 header ul {
     list-style-type: none;
-    /* display: flex;
-    flex-flow: column nowrap; */
 }
 
 header nav li {
@@ -141,51 +110,57 @@ header a:hover {
     background-color: #1F2937;
     display: flex;
     flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    justify-content: space-evenly;
     color: #E5E7E7;
-    margin-top: -100px;
-    padding: 30px 100px;
+    padding: 60px 0;
+    /* text-align: center; */
+
 }
 
 .hero article{
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
+    max-width: 600px;
+    margin: 0 100px;
 }
 
 .hero img {
-    width: 90%;
+    width: 100%;
+    height: auto;
     border-radius: 5px;
+    margin: 20px 0;
 }
 
 .hero h1 {
     font-size: 24px;
     font-weight: 800;
     color: #F9FAF8;
+    margin-bottom: 10px;
 }
 .hero  p {
     font-size: 18px;
     color: #E5E7E7;
     padding: 10px 0;
-    flex: 1;
 }
 
 .hero button {
-    display: block;
+    display: inline-block;
     background-color: #3882F6;
     color: #F9FAF8;
     border: 1px solid #3882F6;
     border-radius: 5px;
-    padding: 5px 8px;
-    margin: 10px 0;
+    padding: 5px 15px;
+    margin-top: 15px;
     cursor: pointer;
 }
 
 .hero button:hover {
     transform: scale(0.95);
 }
-.hero-image img {
-    width: 300px;
-}
+
 main {
     min-height: 500px;
 }
@@ -208,12 +183,6 @@ main {
     align-items: end;
     margin: 5px 0;
     padding: 5px;
-}
-main {
-
-    padding-top: 100px;
-    padding-bottom: 100px;
-    color:#1f2937;
 }
 
 p{
@@ -239,8 +208,6 @@ p{
     max-width: 100%;
     margin: 0 auto;
     margin-bottom: 24px;
-    /* padding-left: 40px;
-    padding-right: 40px; */
     padding-left: 10rem;
     padding-right: 10rem ;
 }
@@ -415,28 +382,6 @@ footer .wrapper {
     font-size: 12px;
 }
 
-/* @media screen and (max-width: 1400px) {
-  .divExplore {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 20px;
-  }
-
-  .figureCards {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
-    max-width: 400px;
-    margin: 10px auto;
-  }
-
-  .imgCards {
-    width: 100%;
-    height: auto;
-  }
-} */
-
 
 @media screen and (min-width: 768px) {
 
@@ -480,9 +425,7 @@ footer .wrapper {
         height: auto;
     }
 
-
     main {
         min-height: max-content;
-    } */
-  }
-
+    }
+}
