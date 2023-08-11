@@ -1,14 +1,16 @@
 * {
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  
   line-height: 1.6;
   background-color: #f9f9f9;
   color: #333;
   margin: 0;
   padding: 0;
+  
 }
 
 header {
@@ -171,8 +173,6 @@ main {
 }
 
 p {
-    padding-top: 20px;
-    padding-bottom: 20px;
     font-size: 18px;
     color:#1f2937;
 }
@@ -181,8 +181,9 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
 }
 
 .divOffers,
@@ -328,7 +329,9 @@ footer .wrapper {
     font-size: 16px;
     color: #F9FAF8;
 }
-
+.footer-col ul{
+    margin-left: -40px;
+}
 .footer-col ul li a {
     font-size: 14px;
     color: #F9FAF8;
@@ -359,10 +362,14 @@ footer .wrapper {
 
 @media screen and (max-width: 768px) {
   .hero {
-    padding: 0;
+    padding: 40px;
+
   }
 
   .hero article {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 
   }
   .hero h1 {
@@ -374,14 +381,32 @@ footer .wrapper {
   }
 
   .hero button {
-    padding-left: 10px;
+    margin-left: 10px;
   }
 
   .hero img {
     width: 100%;
+    max-width: 350px;
     height: auto;
     border-radius: 5px;
-    margin: 20px 0;
+    margin-left: -30px;
+  }
+  .header-title{
+    margin-left: 40px;
+  }
+  .menu-button{
+    margin-right: 40px;
+  }
+
+  .divExplore{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  .imgCards{
+    width: auto;
+    height: 100px;
+    border-radius: 5px;
   }
 }
 
@@ -437,8 +462,9 @@ footer .wrapper {
     }
 
     .imgCards {
-      width: 100%;
-      height: auto;
+        width: auto;
+        height: 100px;
+        border-radius: 5px;
     }
 
     main {
