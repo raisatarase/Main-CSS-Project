@@ -43,3 +43,19 @@ body {
 .tips button {
     width: 160px;
 }
+
+@media (max-width: 600px) {
+    .someText, .wrapper, .tip{
+        display: flex;
+        flex-direction: column;
+    }
+  
+}
+  
+  /* Tablet styles for min-width 601px and max-width:1024px */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .someText, .wrapper, .tip{
+        display: flex;
+        flex-direction: column;
+    }
+  }
