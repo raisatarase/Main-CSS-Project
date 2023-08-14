@@ -408,6 +408,10 @@ footer .wrapper {
     height: 100px;
     border-radius: 5px;
   }
+  .helpDiv{
+    margin: 20px;
+    padding: 10px;
+  }
 }
 
 @media screen and (min-width: 768px) {
