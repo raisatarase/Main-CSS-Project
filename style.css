@@ -385,8 +385,8 @@ footer .wrapper {
   }
 
   .hero img {
-    width: 100%;
-    max-width: 350px;
+    width: 118%;
+    max-width: 480px;
     height: auto;
     border-radius: 5px;
     margin-left: -30px;
@@ -407,6 +407,10 @@ footer .wrapper {
     width: auto;
     height: 100px;
     border-radius: 5px;
+  }
+  .helpDiv{
+    margin: 20px;
+    padding: 10px;
   }
 }
 
